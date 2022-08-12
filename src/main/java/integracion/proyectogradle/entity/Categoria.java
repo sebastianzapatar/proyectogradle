@@ -11,6 +11,7 @@ public class Categoria {
     @Column(name="categoria_id")
     private Long id;
 
+
     @Column
     private String descripcion;
     @Column

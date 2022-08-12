@@ -21,4 +21,14 @@ public class CategoriaService implements ICategoriaService{
     public Optional<Categoria> findById(Long id) {
         return categoriaDAO.findById(id);
     }
+
+    @Override
+    public void delete(Long id) {
+        categoriaDAO.deleteById(id);
+    }
+
+    @Override
+    public Categoria save(Categoria e) {
+        return categoriaDAO.save(e);
+    }
 }

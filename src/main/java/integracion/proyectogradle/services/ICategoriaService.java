@@ -10,4 +10,6 @@ public interface ICategoriaService {
 
 
     public Optional<Categoria> findById(Long id);
+    public void delete(Long id);
+    public Categoria save(Categoria e);
 }
