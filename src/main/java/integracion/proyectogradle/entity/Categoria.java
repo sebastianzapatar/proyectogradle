@@ -1,6 +1,7 @@
 package integracion.proyectogradle.entity;
 
 import javax.persistence.*;
+import java.util.List;
 
 
 @Entity
@@ -10,12 +11,13 @@ public class Categoria {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="categoria_id")
     private Long id;
-
-
     @Column
     private String descripcion;
     @Column
     private Boolean estado;
+
+
+
 
     public Long getId() {
         return id;
